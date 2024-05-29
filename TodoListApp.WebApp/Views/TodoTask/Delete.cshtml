@@ -1,0 +1,49 @@
+﻿@model TodoTask
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Delete Task</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" class="row">
+            <div class="border p-3">
+                @*<div asp-validation-summary="ModelOnly"></div>*@
+                <div class="form-floating py-2 col-12">
+                    <input disabled asp-for="Title" class="form-control border-0 shadow" />
+                    <label class="ms-2">Title</label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input disabled asp-for="Description" class="form-control border-0 shadow" />
+                    <label class="ms-2">Description</label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input disabled asp-for="DueDate" class="form-control border-0 shadow" />
+                    <label class="ms-2">Due Date</label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <select disabled asp-for="TodoListId" class="form-select border-0 shadow">
+                        <option disabled selected>--Select Todo List--</option>
+                    </select>
+                    <label class="ms-2">List</label>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-danger form-control">Delete</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="TodoTask" asp-action="Index" class="btn btn-outline-primary border  form-control">
+                            Back to List
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</div>

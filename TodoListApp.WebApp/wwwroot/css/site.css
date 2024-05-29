@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.img {
+    width: 70%;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.links {
+    display: flex;
+    justify-content: space-between
+}
